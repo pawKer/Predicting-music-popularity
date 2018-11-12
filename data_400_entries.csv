@@ -1,4 +1,4 @@
-Song Title,Artist,Popularity,Energy,Liveness,Tempo,Speechiness,Acousticness,Instrumentalness,Time Signature,Danceability,Key,Duration in ms,Loudness,Valence,Mode
+song_title,artist,popularity,energy,liveness,tempo,speechiness,acousticness,instrumentalness,time_signature,danceability,key,duration,loudness,valence,mode
 Funky Friday,"Dave,Fredo,",79,0.535,0.107,125.066,0.196,0.0783,0,4,0.975,1,182741,-7.227,0.671,1
 Happier,"Marshmello,Bastille,",99,0.792,0.167,100.015,0.0452,0.191,0,4,0.687,5,214290,-2.749,0.671,1
 Eastside (with Halsey & Khalid),"benny blanco,Halsey,Khalid,",99,0.68,0.116,89.391,0.321,0.555,0,4,0.56,6,173800,-7.648,0.319,0
