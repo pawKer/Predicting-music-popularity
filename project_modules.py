@@ -56,7 +56,24 @@ def label_data(data, threshold_value):
     print('Number of popular examples after thresholding : ', labeled_popular)
     print('Number of not popular examples after thresholding : ', labeled_notpopular)
     return labeled_data
+def label_data_combined(data, threshold_sp, threshold_yt):
+    labeled_data = data.copy()
+    labels = []
+    labeled_popular = 0
+    labeled_notpopular = 0
+    for item in data[['popularity', 'youtube_view_count']].values:
+        if item[0] > threshold_sp or item[1] > threshold_yt:
+            labels.append(1)
+            labeled_popular = labeled_popular + 1
+        else:
+            labels.append(0)
+            labeled_notpopular = labeled_notpopular + 1
+    labeled_data['is_popular'] = labels
 
+    print('Number of popular examples after thresholding : ', labeled_popular)
+    print('Number of not popular examples after thresholding : ', labeled_notpopular)
+    return labeled_data
+    
 
 
 
