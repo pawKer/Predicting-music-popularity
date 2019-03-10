@@ -6,8 +6,19 @@ import config
 import pickle
 #code which helps initialize our server
 client_credentials_manager = SpotifyClientCredentials(config.client_id, config.client_secret)
-model = pickle.load(open("model.pkl","rb"))
+mlp = pickle.load(open("model.pkl","rb"))
+mlp_online = pickle.load(open("mlp_online.pkl","rb"))
+svm = pickle.load(open("svm.pkl","rb"))
+log = pickle.load(open("log.pkl","rb"))
+print("MLP loaded", mlp)
+print()
+print("MLP Online loaded", mlp_online)
+print()
+print("SVM with sel features loaded", svm)
+print()
+print("Log. Reg loaded", log)
 scaler = pickle.load(open("scaler.pkl","rb"))
+scaler_svm = pickle.load(open("scaler_svm.pkl","rb"))
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 app = Flask(__name__)
 
@@ -16,50 +27,98 @@ def index():
     return render_template('index.html');
 
 @app.route('/search')
-def malone():
+def searchAndPredictSong():
 	query = request.args.get('q')
+	selectedModel = request.args.get('sel')
 	imageLink = ""
 	trackName = ""
 	artistName = ""
-	audioFeatures = ""
 	isPopular = ""
 	spotifyURL = ""
 	if query != "":
-		print(query)
 		results = sp.search(q='track:' +  query, limit=1, type='track')
-		print(results)
-		imageLink = results['tracks']['items'][0]['album']['images'][0]['url']
-		artistName = results['tracks']['items'][0]['album']['artists'][0]['name']
-		trackName = results['tracks']['items'][0]['name']
-		trackId = results['tracks']['items'][0]['id']
-		spotifyURL = results['tracks']['items'][0]['external_urls']['spotify']
-		features = sp.audio_features([trackId])
-		if features[0] != None:
-			energy = features[0]['energy']
-			liveness = features[0]['liveness'] 
-			tempo = features[0]['tempo']
-			speechiness = features[0]['speechiness']
-			acousticness = features[0]['acousticness']
-			instrumentalness = features[0]['instrumentalness']
-			time_signature = features[0]['time_signature']
-			danceability = features[0]['danceability']
-			key = features[0]['key']
-			duration_ms = features[0]['duration_ms']
-			loudness = features[0]['loudness']
-			valence = features[0]['valence']
-			mode = features[0]['mode']
-            
-			# Create a new row of data for each song using the features above
-			data = []
-			newRow = []
-			newRow = data.append([energy, liveness, tempo, speechiness, acousticness, instrumentalness, time_signature,
-			      danceability, key, duration_ms, loudness, valence, mode])
-			scaled_data = scaler.transform(data)
-			predicted_label = model.predict(scaled_data)
-			isPopular = predicted_label[0]
-			print("Predicted label is : ", predicted_label)
+		# print(results)
+		if results['tracks']['items'] != []:
+			imageLink = results['tracks']['items'][0]['album']['images'][0]['url']
+			artistName = results['tracks']['items'][0]['album']['artists'][0]['name']
+			trackName = results['tracks']['items'][0]['name']
+			trackId = results['tracks']['items'][0]['id']
+			spotifyURL = results['tracks']['items'][0]['external_urls']['spotify']
+			popularity = results['tracks']['items'][0]['popularity']
+			features = sp.audio_features([trackId])
+			if features[0] != None:
+				energy = features[0]['energy']
+				liveness = features[0]['liveness'] 
+				tempo = features[0]['tempo']
+				speechiness = features[0]['speechiness']
+				acousticness = features[0]['acousticness']
+				instrumentalness = features[0]['instrumentalness']
+				time_signature = features[0]['time_signature']
+				danceability = features[0]['danceability']
+				key = features[0]['key']
+				duration_ms = features[0]['duration_ms']
+				loudness = features[0]['loudness']
+				valence = features[0]['valence']
+				mode = features[0]['mode']
+	            
+				# Create a new row of data for each song using the features above
+				data = []
+				data.append([energy, liveness, tempo, speechiness, acousticness, instrumentalness, time_signature,
+				      danceability, key, duration_ms, loudness, valence, mode])
+				# print(data)
+				scaled_data = scaler.transform(data)
+				
+				if selectedModel == "SVM":
+					usingCls = "SVM"
+					print("USING SVM")
+					data_with_fs = []
+					data_with_fs.append([energy, tempo, speechiness, instrumentalness, time_signature, duration_ms, loudness])
+					scaled_data_with_fs = scaler_svm.transform(data_with_fs)
+					predicted_label = svm.predict(scaled_data_with_fs)
+					predicted_probablities = svm.predict_proba(scaled_data_with_fs)
+					isPopular = predicted_label[0]
+				elif selectedModel == "Log. Reg.":
+					usingCls = "Log. Reg."
+					print("USING Log. Reg.");
+					predicted_label = log.predict(scaled_data)
+					predicted_probablities = log.predict_proba(scaled_data)
+					isPopular = predicted_label[0]
+				elif selectedModel == "MLP":
+					usingCls = "MLP"
+					print("USING MLP");
+					predicted_label = mlp.predict(scaled_data)
+					predicted_probablities = mlp.predict_proba(scaled_data)
+					isPopular = predicted_label[0]
+				elif selectedModel == "MLP Online":
+					usingCls = "MLP Online"
+					print("USING MLP Online")
+					predicted_label = mlp_online.predict(scaled_data)
+					predicted_probablities = mlp_online.predict_proba(scaled_data)
+					isPopular = predicted_label[0]
+					y = []
+					if popularity >= 90:
+						y.append(1)
+					else:
+						y.append(0)
+					print("Learning new example with popularity: ", popularity)
+					mlp_online.partial_fit(scaled_data, y)
+				else:
+					print("USING MLP");
+					usingCls = "MLP"
+					predicted_label = mlp.predict(scaled_data)
+					predicted_probablities = mlp.predict_proba(scaled_data)
+					isPopular = predicted_label[0]
+				
+				print("Predicted label is : ", predicted_label)
+				print(predicted_probablities)
+		else:
+			message = "No song found for query: " + query
+			return render_template('index.html', message = message)
+	else:
+		message = "Try 7 rings - Ariana Grande, Wow - Post Malone, thank u next - Ariana Grande"
+		return render_template('index.html', message = message)
 	return render_template('index.html', imageLink = imageLink, artistName = artistName,
-							spotifyURL = spotifyURL, trackName=trackName, isPopular=isPopular)
+							spotifyURL = spotifyURL, trackName=trackName, isPopular=isPopular, usingCls=usingCls)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

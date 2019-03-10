@@ -1,0 +1,541 @@
+,index,activation,solver,alpha,learning_rate,"hidden_layer_sizes, score"
+0,identity,lbfgs,1e-05,constant,"(50, 50, 50)",0.6107843137254901
+1,identity,lbfgs,1e-05,constant,"(50, 100, 50)",0.6653594771241831
+2,identity,lbfgs,1e-05,constant,"(100,)",0.6117647058823529
+3,identity,lbfgs,1e-05,invscaling,"(50, 50, 50)",0.6513071895424836
+4,identity,lbfgs,1e-05,invscaling,"(50, 100, 50)",0.6147058823529412
+5,identity,lbfgs,1e-05,invscaling,"(100,)",0.5483660130718954
+6,identity,lbfgs,1e-05,adaptive,"(50, 50, 50)",0.576797385620915
+7,identity,lbfgs,1e-05,adaptive,"(50, 100, 50)",0.6794117647058824
+8,identity,lbfgs,1e-05,adaptive,"(100,)",0.5875816993464051
+9,identity,lbfgs,0.0001,constant,"(50, 50, 50)",0.6467320261437909
+10,identity,lbfgs,0.0001,constant,"(50, 100, 50)",0.5669934640522876
+11,identity,lbfgs,0.0001,constant,"(100,)",0.5937908496732026
+12,identity,lbfgs,0.0001,invscaling,"(50, 50, 50)",0.657516339869281
+13,identity,lbfgs,0.0001,invscaling,"(50, 100, 50)",0.5993464052287582
+14,identity,lbfgs,0.0001,invscaling,"(100,)",0.5888888888888888
+15,identity,lbfgs,0.0001,adaptive,"(50, 50, 50)",0.5741830065359477
+16,identity,lbfgs,0.0001,adaptive,"(50, 100, 50)",0.6062091503267973
+17,identity,lbfgs,0.0001,adaptive,"(100,)",0.5996732026143791
+18,identity,lbfgs,1.0,constant,"(50, 50, 50)",0.6388888888888888
+19,identity,lbfgs,1.0,constant,"(50, 100, 50)",0.6330065359477124
+20,identity,lbfgs,1.0,constant,"(100,)",0.6437908496732027
+21,identity,lbfgs,1.0,invscaling,"(50, 50, 50)",0.5620915032679739
+22,identity,lbfgs,1.0,invscaling,"(50, 100, 50)",0.6346405228758171
+23,identity,lbfgs,1.0,invscaling,"(100,)",0.65
+24,identity,lbfgs,1.0,adaptive,"(50, 50, 50)",0.6486928104575164
+25,identity,lbfgs,1.0,adaptive,"(50, 100, 50)",0.5624183006535948
+26,identity,lbfgs,1.0,adaptive,"(100,)",0.6055555555555556
+27,identity,lbfgs,0.001,constant,"(50, 50, 50)",0.634640522875817
+28,identity,lbfgs,0.001,constant,"(50, 100, 50)",0.6297385620915031
+29,identity,lbfgs,0.001,constant,"(100,)",0.5836601307189543
+30,identity,lbfgs,0.001,invscaling,"(50, 50, 50)",0.634313725490196
+31,identity,lbfgs,0.001,invscaling,"(50, 100, 50)",0.6892156862745098
+32,identity,lbfgs,0.001,invscaling,"(100,)",0.5836601307189542
+33,identity,lbfgs,0.001,adaptive,"(50, 50, 50)",0.6088235294117648
+34,identity,lbfgs,0.001,adaptive,"(50, 100, 50)",0.6362745098039215
+35,identity,lbfgs,0.001,adaptive,"(100,)",0.6339869281045751
+36,identity,lbfgs,0.01,constant,"(50, 50, 50)",0.6588235294117648
+37,identity,lbfgs,0.01,constant,"(50, 100, 50)",0.6143790849673202
+38,identity,lbfgs,0.01,constant,"(100,)",0.6473856209150327
+39,identity,lbfgs,0.01,invscaling,"(50, 50, 50)",0.6473856209150327
+40,identity,lbfgs,0.01,invscaling,"(50, 100, 50)",0.60359477124183
+41,identity,lbfgs,0.01,invscaling,"(100,)",0.5568627450980392
+42,identity,lbfgs,0.01,adaptive,"(50, 50, 50)",0.6029411764705882
+43,identity,lbfgs,0.01,adaptive,"(50, 100, 50)",0.6013071895424837
+44,identity,lbfgs,0.01,adaptive,"(100,)",0.673202614379085
+45,identity,sgd,1e-05,constant,"(50, 50, 50)",0.6127450980392156
+46,identity,sgd,1e-05,constant,"(50, 100, 50)",0.615359477124183
+47,identity,sgd,1e-05,constant,"(100,)",0.6588235294117646
+48,identity,sgd,1e-05,invscaling,"(50, 50, 50)",0.5761437908496732
+49,identity,sgd,1e-05,invscaling,"(50, 100, 50)",0.4120915032679739
+50,identity,sgd,1e-05,invscaling,"(100,)",0.5444444444444445
+51,identity,sgd,1e-05,adaptive,"(50, 50, 50)",0.6294117647058823
+52,identity,sgd,1e-05,adaptive,"(50, 100, 50)",0.5918300653594771
+53,identity,sgd,1e-05,adaptive,"(100,)",0.5045751633986929
+54,identity,sgd,0.0001,constant,"(50, 50, 50)",0.6441176470588236
+55,identity,sgd,0.0001,constant,"(50, 100, 50)",0.6232026143790849
+56,identity,sgd,0.0001,constant,"(100,)",0.6669934640522877
+57,identity,sgd,0.0001,invscaling,"(50, 50, 50)",0.5810457516339869
+58,identity,sgd,0.0001,invscaling,"(50, 100, 50)",0.41633986928104577
+59,identity,sgd,0.0001,invscaling,"(100,)",0.5696078431372549
+60,identity,sgd,0.0001,adaptive,"(50, 50, 50)",0.5679738562091503
+61,identity,sgd,0.0001,adaptive,"(50, 100, 50)",0.6277777777777779
+62,identity,sgd,0.0001,adaptive,"(100,)",0.5542483660130719
+63,identity,sgd,1.0,constant,"(50, 50, 50)",0.5862745098039215
+64,identity,sgd,1.0,constant,"(50, 100, 50)",0.5836601307189542
+65,identity,sgd,1.0,constant,"(100,)",0.5738562091503268
+66,identity,sgd,1.0,invscaling,"(50, 50, 50)",0.6369281045751632
+67,identity,sgd,1.0,invscaling,"(50, 100, 50)",0.41013071895424835
+68,identity,sgd,1.0,invscaling,"(100,)",0.5065359477124183
+69,identity,sgd,1.0,adaptive,"(50, 50, 50)",0.6238562091503267
+70,identity,sgd,1.0,adaptive,"(50, 100, 50)",0.6091503267973856
+71,identity,sgd,1.0,adaptive,"(100,)",0.5895424836601307
+72,identity,sgd,0.001,constant,"(50, 50, 50)",0.5957516339869281
+73,identity,sgd,0.001,constant,"(50, 100, 50)",0.6088235294117647
+74,identity,sgd,0.001,constant,"(100,)",0.5843137254901961
+75,identity,sgd,0.001,invscaling,"(50, 50, 50)",0.550326797385621
+76,identity,sgd,0.001,invscaling,"(50, 100, 50)",0.44836601307189533
+77,identity,sgd,0.001,invscaling,"(100,)",0.5428104575163398
+78,identity,sgd,0.001,adaptive,"(50, 50, 50)",0.5990196078431372
+79,identity,sgd,0.001,adaptive,"(50, 100, 50)",0.6101307189542484
+80,identity,sgd,0.001,adaptive,"(100,)",0.6839869281045752
+81,identity,sgd,0.01,constant,"(50, 50, 50)",0.6748366013071896
+82,identity,sgd,0.01,constant,"(50, 100, 50)",0.6470588235294117
+83,identity,sgd,0.01,constant,"(100,)",0.6415032679738562
+84,identity,sgd,0.01,invscaling,"(50, 50, 50)",0.60359477124183
+85,identity,sgd,0.01,invscaling,"(50, 100, 50)",0.4450980392156863
+86,identity,sgd,0.01,invscaling,"(100,)",0.6019607843137255
+87,identity,sgd,0.01,adaptive,"(50, 50, 50)",0.6084967320261438
+88,identity,sgd,0.01,adaptive,"(50, 100, 50)",0.6777777777777778
+89,identity,sgd,0.01,adaptive,"(100,)",0.6032679738562092
+90,identity,adam,1e-05,constant,"(50, 50, 50)",0.6718954248366014
+91,identity,adam,1e-05,constant,"(50, 100, 50)",0.6179738562091504
+92,identity,adam,1e-05,constant,"(100,)",0.5862745098039215
+93,identity,adam,1e-05,invscaling,"(50, 50, 50)",0.5931372549019608
+94,identity,adam,1e-05,invscaling,"(50, 100, 50)",0.60359477124183
+95,identity,adam,1e-05,invscaling,"(100,)",0.5875816993464053
+96,identity,adam,1e-05,adaptive,"(50, 50, 50)",0.6323529411764706
+97,identity,adam,1e-05,adaptive,"(50, 100, 50)",0.6490196078431373
+98,identity,adam,1e-05,adaptive,"(100,)",0.5372549019607844
+99,identity,adam,0.0001,constant,"(50, 50, 50)",0.5964052287581699
+100,identity,adam,0.0001,constant,"(50, 100, 50)",0.6235294117647059
+101,identity,adam,0.0001,constant,"(100,)",0.6411764705882353
+102,identity,adam,0.0001,invscaling,"(50, 50, 50)",0.5650326797385621
+103,identity,adam,0.0001,invscaling,"(50, 100, 50)",0.6758169934640522
+104,identity,adam,0.0001,invscaling,"(100,)",0.626797385620915
+105,identity,adam,0.0001,adaptive,"(50, 50, 50)",0.5830065359477123
+106,identity,adam,0.0001,adaptive,"(50, 100, 50)",0.6062091503267975
+107,identity,adam,0.0001,adaptive,"(100,)",0.5830065359477123
+108,identity,adam,1.0,constant,"(50, 50, 50)",0.5934640522875816
+109,identity,adam,1.0,constant,"(50, 100, 50)",0.6104575163398694
+110,identity,adam,1.0,constant,"(100,)",0.6271241830065359
+111,identity,adam,1.0,invscaling,"(50, 50, 50)",0.6183006535947714
+112,identity,adam,1.0,invscaling,"(50, 100, 50)",0.6065359477124184
+113,identity,adam,1.0,invscaling,"(100,)",0.6398692810457517
+114,identity,adam,1.0,adaptive,"(50, 50, 50)",0.6617647058823529
+115,identity,adam,1.0,adaptive,"(50, 100, 50)",0.6643790849673202
+116,identity,adam,1.0,adaptive,"(100,)",0.6120915032679739
+117,identity,adam,0.001,constant,"(50, 50, 50)",0.6199346405228758
+118,identity,adam,0.001,constant,"(50, 100, 50)",0.5705882352941176
+119,identity,adam,0.001,constant,"(100,)",0.618954248366013
+120,identity,adam,0.001,invscaling,"(50, 50, 50)",0.6617647058823529
+121,identity,adam,0.001,invscaling,"(50, 100, 50)",0.6843137254901961
+122,identity,adam,0.001,invscaling,"(100,)",0.6722222222222222
+123,identity,adam,0.001,adaptive,"(50, 50, 50)",0.6395424836601307
+124,identity,adam,0.001,adaptive,"(50, 100, 50)",0.6558823529411764
+125,identity,adam,0.001,adaptive,"(100,)",0.592156862745098
+126,identity,adam,0.01,constant,"(50, 50, 50)",0.6297385620915034
+127,identity,adam,0.01,constant,"(50, 100, 50)",0.6179738562091502
+128,identity,adam,0.01,constant,"(100,)",0.6571895424836602
+129,identity,adam,0.01,invscaling,"(50, 50, 50)",0.5820261437908497
+130,identity,adam,0.01,invscaling,"(50, 100, 50)",0.6676470588235294
+131,identity,adam,0.01,invscaling,"(100,)",0.6581699346405229
+132,identity,adam,0.01,adaptive,"(50, 50, 50)",0.5957516339869281
+133,identity,adam,0.01,adaptive,"(50, 100, 50)",0.638235294117647
+134,identity,adam,0.01,adaptive,"(100,)",0.6741830065359478
+135,logistic,lbfgs,1e-05,constant,"(50, 50, 50)",0.5473856209150326
+136,logistic,lbfgs,1e-05,constant,"(50, 100, 50)",0.5052287581699346
+137,logistic,lbfgs,1e-05,constant,"(100,)",0.6741830065359478
+138,logistic,lbfgs,1e-05,invscaling,"(50, 50, 50)",0.4761437908496732
+139,logistic,lbfgs,1e-05,invscaling,"(50, 100, 50)",0.5905228758169935
+140,logistic,lbfgs,1e-05,invscaling,"(100,)",0.6408496732026143
+141,logistic,lbfgs,1e-05,adaptive,"(50, 50, 50)",0.515359477124183
+142,logistic,lbfgs,1e-05,adaptive,"(50, 100, 50)",0.557843137254902
+143,logistic,lbfgs,1e-05,adaptive,"(100,)",0.6529411764705884
+144,logistic,lbfgs,0.0001,constant,"(50, 50, 50)",0.5852941176470587
+145,logistic,lbfgs,0.0001,constant,"(50, 100, 50)",0.5996732026143791
+146,logistic,lbfgs,0.0001,constant,"(100,)",0.572875816993464
+147,logistic,lbfgs,0.0001,invscaling,"(50, 50, 50)",0.6068627450980392
+148,logistic,lbfgs,0.0001,invscaling,"(50, 100, 50)",0.592156862745098
+149,logistic,lbfgs,0.0001,invscaling,"(100,)",0.5986928104575163
+150,logistic,lbfgs,0.0001,adaptive,"(50, 50, 50)",0.584640522875817
+151,logistic,lbfgs,0.0001,adaptive,"(50, 100, 50)",0.6457516339869281
+152,logistic,lbfgs,0.0001,adaptive,"(100,)",0.6450980392156863
+153,logistic,lbfgs,1.0,constant,"(50, 50, 50)",0.511764705882353
+154,logistic,lbfgs,1.0,constant,"(50, 100, 50)",0.4937908496732025
+155,logistic,lbfgs,1.0,constant,"(100,)",0.6571895424836601
+156,logistic,lbfgs,1.0,invscaling,"(50, 50, 50)",0.5241830065359477
+157,logistic,lbfgs,1.0,invscaling,"(50, 100, 50)",0.49673202614379086
+158,logistic,lbfgs,1.0,invscaling,"(100,)",0.5444444444444445
+159,logistic,lbfgs,1.0,adaptive,"(50, 50, 50)",0.5826797385620914
+160,logistic,lbfgs,1.0,adaptive,"(50, 100, 50)",0.44607843137254904
+161,logistic,lbfgs,1.0,adaptive,"(100,)",0.6248366013071895
+162,logistic,lbfgs,0.001,constant,"(50, 50, 50)",0.5647058823529412
+163,logistic,lbfgs,0.001,constant,"(50, 100, 50)",0.6366013071895424
+164,logistic,lbfgs,0.001,constant,"(100,)",0.599346405228758
+165,logistic,lbfgs,0.001,invscaling,"(50, 50, 50)",0.5771241830065359
+166,logistic,lbfgs,0.001,invscaling,"(50, 100, 50)",0.5928104575163399
+167,logistic,lbfgs,0.001,invscaling,"(100,)",0.5281045751633987
+168,logistic,lbfgs,0.001,adaptive,"(50, 50, 50)",0.5519607843137255
+169,logistic,lbfgs,0.001,adaptive,"(50, 100, 50)",0.6395424836601309
+170,logistic,lbfgs,0.001,adaptive,"(100,)",0.5640522875816993
+171,logistic,lbfgs,0.01,constant,"(50, 50, 50)",0.5352941176470587
+172,logistic,lbfgs,0.01,constant,"(50, 100, 50)",0.5849673202614379
+173,logistic,lbfgs,0.01,constant,"(100,)",0.6509803921568628
+174,logistic,lbfgs,0.01,invscaling,"(50, 50, 50)",0.5604575163398693
+175,logistic,lbfgs,0.01,invscaling,"(50, 100, 50)",0.6075163398692811
+176,logistic,lbfgs,0.01,invscaling,"(100,)",0.6277777777777779
+177,logistic,lbfgs,0.01,adaptive,"(50, 50, 50)",0.5973856209150327
+178,logistic,lbfgs,0.01,adaptive,"(50, 100, 50)",0.6189542483660131
+179,logistic,lbfgs,0.01,adaptive,"(100,)",0.5741830065359477
+180,logistic,sgd,1e-05,constant,"(50, 50, 50)",0.5421568627450981
+181,logistic,sgd,1e-05,constant,"(50, 100, 50)",0.36633986928104567
+182,logistic,sgd,1e-05,constant,"(100,)",0.5764705882352941
+183,logistic,sgd,1e-05,invscaling,"(50, 50, 50)",0.6098039215686275
+184,logistic,sgd,1e-05,invscaling,"(50, 100, 50)",0.4741830065359477
+185,logistic,sgd,1e-05,invscaling,"(100,)",0.43921568627450974
+186,logistic,sgd,1e-05,adaptive,"(50, 50, 50)",0.6522875816993464
+187,logistic,sgd,1e-05,adaptive,"(50, 100, 50)",0.37843137254901965
+188,logistic,sgd,1e-05,adaptive,"(100,)",0.6003267973856209
+189,logistic,sgd,0.0001,constant,"(50, 50, 50)",0.5640522875816993
+190,logistic,sgd,0.0001,constant,"(50, 100, 50)",0.3529411764705882
+191,logistic,sgd,0.0001,constant,"(100,)",0.5450980392156863
+192,logistic,sgd,0.0001,invscaling,"(50, 50, 50)",0.5816993464052288
+193,logistic,sgd,0.0001,invscaling,"(50, 100, 50)",0.453921568627451
+194,logistic,sgd,0.0001,invscaling,"(100,)",0.5647058823529412
+195,logistic,sgd,0.0001,adaptive,"(50, 50, 50)",0.626797385620915
+196,logistic,sgd,0.0001,adaptive,"(50, 100, 50)",0.4709150326797385
+197,logistic,sgd,0.0001,adaptive,"(100,)",0.568954248366013
+198,logistic,sgd,1.0,constant,"(50, 50, 50)",0.569281045751634
+199,logistic,sgd,1.0,constant,"(50, 100, 50)",0.4339869281045751
+200,logistic,sgd,1.0,constant,"(100,)",0.5660130718954249
+201,logistic,sgd,1.0,invscaling,"(50, 50, 50)",0.511437908496732
+202,logistic,sgd,1.0,invscaling,"(50, 100, 50)",0.35980392156862745
+203,logistic,sgd,1.0,invscaling,"(100,)",0.49183006535947715
+204,logistic,sgd,1.0,adaptive,"(50, 50, 50)",0.5686274509803921
+205,logistic,sgd,1.0,adaptive,"(50, 100, 50)",0.41633986928104577
+206,logistic,sgd,1.0,adaptive,"(100,)",0.5764705882352941
+207,logistic,sgd,0.001,constant,"(50, 50, 50)",0.5411764705882353
+208,logistic,sgd,0.001,constant,"(50, 100, 50)",0.39346405228758174
+209,logistic,sgd,0.001,constant,"(100,)",0.5911764705882352
+210,logistic,sgd,0.001,invscaling,"(50, 50, 50)",0.6013071895424836
+211,logistic,sgd,0.001,invscaling,"(50, 100, 50)",0.453921568627451
+212,logistic,sgd,0.001,invscaling,"(100,)",0.5996732026143791
+213,logistic,sgd,0.001,adaptive,"(50, 50, 50)",0.5993464052287582
+214,logistic,sgd,0.001,adaptive,"(50, 100, 50)",0.40098039215686276
+215,logistic,sgd,0.001,adaptive,"(100,)",0.5620915032679739
+216,logistic,sgd,0.01,constant,"(50, 50, 50)",0.5643790849673203
+217,logistic,sgd,0.01,constant,"(50, 100, 50)",0.4454248366013072
+218,logistic,sgd,0.01,constant,"(100,)",0.5908496732026143
+219,logistic,sgd,0.01,invscaling,"(50, 50, 50)",0.5830065359477125
+220,logistic,sgd,0.01,invscaling,"(50, 100, 50)",0.38529411764705884
+221,logistic,sgd,0.01,invscaling,"(100,)",0.5480392156862746
+222,logistic,sgd,0.01,adaptive,"(50, 50, 50)",0.5892156862745099
+223,logistic,sgd,0.01,adaptive,"(50, 100, 50)",0.4254901960784313
+224,logistic,sgd,0.01,adaptive,"(100,)",0.5856209150326797
+225,logistic,adam,1e-05,constant,"(50, 50, 50)",0.6258169934640524
+226,logistic,adam,1e-05,constant,"(50, 100, 50)",0.6241830065359477
+227,logistic,adam,1e-05,constant,"(100,)",0.645751633986928
+228,logistic,adam,1e-05,invscaling,"(50, 50, 50)",0.6676470588235294
+229,logistic,adam,1e-05,invscaling,"(50, 100, 50)",0.6486928104575164
+230,logistic,adam,1e-05,invscaling,"(100,)",0.6843137254901961
+231,logistic,adam,1e-05,adaptive,"(50, 50, 50)",0.5980392156862746
+232,logistic,adam,1e-05,adaptive,"(50, 100, 50)",0.6601307189542484
+233,logistic,adam,1e-05,adaptive,"(100,)",0.6552287581699346
+234,logistic,adam,0.0001,constant,"(50, 50, 50)",0.6866013071895425
+235,logistic,adam,0.0001,constant,"(50, 100, 50)",0.65
+236,logistic,adam,0.0001,constant,"(100,)",0.6316993464052288
+237,logistic,adam,0.0001,invscaling,"(50, 50, 50)",0.565359477124183
+238,logistic,adam,0.0001,invscaling,"(50, 100, 50)",0.6281045751633986
+239,logistic,adam,0.0001,invscaling,"(100,)",0.6202614379084966
+240,logistic,adam,0.0001,adaptive,"(50, 50, 50)",0.6738562091503268
+241,logistic,adam,0.0001,adaptive,"(50, 100, 50)",0.634313725490196
+242,logistic,adam,0.0001,adaptive,"(100,)",0.6326797385620916
+243,logistic,adam,1.0,constant,"(50, 50, 50)",0.5820261437908496
+244,logistic,adam,1.0,constant,"(50, 100, 50)",0.5274509803921569
+245,logistic,adam,1.0,constant,"(100,)",0.65718954248366
+246,logistic,adam,1.0,invscaling,"(50, 50, 50)",0.557843137254902
+247,logistic,adam,1.0,invscaling,"(50, 100, 50)",0.6392156862745099
+248,logistic,adam,1.0,invscaling,"(100,)",0.5983660130718953
+249,logistic,adam,1.0,adaptive,"(50, 50, 50)",0.5866013071895424
+250,logistic,adam,1.0,adaptive,"(50, 100, 50)",0.5944444444444443
+251,logistic,adam,1.0,adaptive,"(100,)",0.6228758169934641
+252,logistic,adam,0.001,constant,"(50, 50, 50)",0.638235294117647
+253,logistic,adam,0.001,constant,"(50, 100, 50)",0.6366013071895424
+254,logistic,adam,0.001,constant,"(100,)",0.6611111111111111
+255,logistic,adam,0.001,invscaling,"(50, 50, 50)",0.6215686274509805
+256,logistic,adam,0.001,invscaling,"(50, 100, 50)",0.6604575163398694
+257,logistic,adam,0.001,invscaling,"(100,)",0.6120915032679738
+258,logistic,adam,0.001,adaptive,"(50, 50, 50)",0.607516339869281
+259,logistic,adam,0.001,adaptive,"(50, 100, 50)",0.6470588235294117
+260,logistic,adam,0.001,adaptive,"(100,)",0.6225490196078433
+261,logistic,adam,0.01,constant,"(50, 50, 50)",0.6297385620915031
+262,logistic,adam,0.01,constant,"(50, 100, 50)",0.6601307189542484
+263,logistic,adam,0.01,constant,"(100,)",0.6307189542483659
+264,logistic,adam,0.01,invscaling,"(50, 50, 50)",0.572875816993464
+265,logistic,adam,0.01,invscaling,"(50, 100, 50)",0.6493464052287582
+266,logistic,adam,0.01,invscaling,"(100,)",0.6088235294117647
+267,logistic,adam,0.01,adaptive,"(50, 50, 50)",0.6058823529411764
+268,logistic,adam,0.01,adaptive,"(50, 100, 50)",0.5852941176470587
+269,logistic,adam,0.01,adaptive,"(100,)",0.6382352941176471
+270,tanh,lbfgs,1e-05,constant,"(50, 50, 50)",0.5202614379084967
+271,tanh,lbfgs,1e-05,constant,"(50, 100, 50)",0.5709150326797386
+272,tanh,lbfgs,1e-05,constant,"(100,)",0.6431372549019608
+273,tanh,lbfgs,1e-05,invscaling,"(50, 50, 50)",0.5918300653594771
+274,tanh,lbfgs,1e-05,invscaling,"(50, 100, 50)",0.626797385620915
+275,tanh,lbfgs,1e-05,invscaling,"(100,)",0.5781045751633986
+276,tanh,lbfgs,1e-05,adaptive,"(50, 50, 50)",0.5336601307189542
+277,tanh,lbfgs,1e-05,adaptive,"(50, 100, 50)",0.6307189542483661
+278,tanh,lbfgs,1e-05,adaptive,"(100,)",0.6163398692810458
+279,tanh,lbfgs,0.0001,constant,"(50, 50, 50)",0.60359477124183
+280,tanh,lbfgs,0.0001,constant,"(50, 100, 50)",0.6163398692810458
+281,tanh,lbfgs,0.0001,constant,"(100,)",0.5483660130718955
+282,tanh,lbfgs,0.0001,invscaling,"(50, 50, 50)",0.6062091503267975
+283,tanh,lbfgs,0.0001,invscaling,"(50, 100, 50)",0.6267973856209149
+284,tanh,lbfgs,0.0001,invscaling,"(100,)",0.5885620915032679
+285,tanh,lbfgs,0.0001,adaptive,"(50, 50, 50)",0.5454248366013073
+286,tanh,lbfgs,0.0001,adaptive,"(50, 100, 50)",0.5401960784313726
+287,tanh,lbfgs,0.0001,adaptive,"(100,)",0.6447712418300654
+288,tanh,lbfgs,1.0,constant,"(50, 50, 50)",0.6751633986928105
+289,tanh,lbfgs,1.0,constant,"(50, 100, 50)",0.5885620915032679
+290,tanh,lbfgs,1.0,constant,"(100,)",0.6428104575163399
+291,tanh,lbfgs,1.0,invscaling,"(50, 50, 50)",0.5098039215686275
+292,tanh,lbfgs,1.0,invscaling,"(50, 100, 50)",0.6150326797385621
+293,tanh,lbfgs,1.0,invscaling,"(100,)",0.5647058823529411
+294,tanh,lbfgs,1.0,adaptive,"(50, 50, 50)",0.5813725490196078
+295,tanh,lbfgs,1.0,adaptive,"(50, 100, 50)",0.5725490196078431
+296,tanh,lbfgs,1.0,adaptive,"(100,)",0.5555555555555556
+297,tanh,lbfgs,0.001,constant,"(50, 50, 50)",0.5885620915032679
+298,tanh,lbfgs,0.001,constant,"(50, 100, 50)",0.6143790849673203
+299,tanh,lbfgs,0.001,constant,"(100,)",0.5565359477124183
+300,tanh,lbfgs,0.001,invscaling,"(50, 50, 50)",0.5196078431372549
+301,tanh,lbfgs,0.001,invscaling,"(50, 100, 50)",0.5892156862745099
+302,tanh,lbfgs,0.001,invscaling,"(100,)",0.6183006535947712
+303,tanh,lbfgs,0.001,adaptive,"(50, 50, 50)",0.5130718954248364
+304,tanh,lbfgs,0.001,adaptive,"(50, 100, 50)",0.5705882352941176
+305,tanh,lbfgs,0.001,adaptive,"(100,)",0.5745098039215686
+306,tanh,lbfgs,0.01,constant,"(50, 50, 50)",0.6290849673202614
+307,tanh,lbfgs,0.01,constant,"(50, 100, 50)",0.5996732026143791
+308,tanh,lbfgs,0.01,constant,"(100,)",0.634967320261438
+309,tanh,lbfgs,0.01,invscaling,"(50, 50, 50)",0.6107843137254902
+310,tanh,lbfgs,0.01,invscaling,"(50, 100, 50)",0.5862745098039215
+311,tanh,lbfgs,0.01,invscaling,"(100,)",0.5738562091503268
+312,tanh,lbfgs,0.01,adaptive,"(50, 50, 50)",0.5895424836601307
+313,tanh,lbfgs,0.01,adaptive,"(50, 100, 50)",0.6062091503267973
+314,tanh,lbfgs,0.01,adaptive,"(100,)",0.6130718954248365
+315,tanh,sgd,1e-05,constant,"(50, 50, 50)",0.6450980392156863
+316,tanh,sgd,1e-05,constant,"(50, 100, 50)",0.6186274509803922
+317,tanh,sgd,1e-05,constant,"(100,)",0.6601307189542485
+318,tanh,sgd,1e-05,invscaling,"(50, 50, 50)",0.5591503267973856
+319,tanh,sgd,1e-05,invscaling,"(50, 100, 50)",0.4196078431372549
+320,tanh,sgd,1e-05,invscaling,"(100,)",0.5075163398692811
+321,tanh,sgd,1e-05,adaptive,"(50, 50, 50)",0.591830065359477
+322,tanh,sgd,1e-05,adaptive,"(50, 100, 50)",0.6316993464052286
+323,tanh,sgd,1e-05,adaptive,"(100,)",0.6310457516339869
+324,tanh,sgd,0.0001,constant,"(50, 50, 50)",0.6637254901960784
+325,tanh,sgd,0.0001,constant,"(50, 100, 50)",0.6281045751633987
+326,tanh,sgd,0.0001,constant,"(100,)",0.6565359477124184
+327,tanh,sgd,0.0001,invscaling,"(50, 50, 50)",0.5490196078431373
+328,tanh,sgd,0.0001,invscaling,"(50, 100, 50)",0.38986928104575164
+329,tanh,sgd,0.0001,invscaling,"(100,)",0.5362745098039216
+330,tanh,sgd,0.0001,adaptive,"(50, 50, 50)",0.6388888888888888
+331,tanh,sgd,0.0001,adaptive,"(50, 100, 50)",0.6117647058823531
+332,tanh,sgd,0.0001,adaptive,"(100,)",0.553921568627451
+333,tanh,sgd,1.0,constant,"(50, 50, 50)",0.6271241830065358
+334,tanh,sgd,1.0,constant,"(50, 100, 50)",0.6065359477124183
+335,tanh,sgd,1.0,constant,"(100,)",0.6205882352941177
+336,tanh,sgd,1.0,invscaling,"(50, 50, 50)",0.531045751633987
+337,tanh,sgd,1.0,invscaling,"(50, 100, 50)",0.41764705882352937
+338,tanh,sgd,1.0,invscaling,"(100,)",0.5784313725490196
+339,tanh,sgd,1.0,adaptive,"(50, 50, 50)",0.6356209150326797
+340,tanh,sgd,1.0,adaptive,"(50, 100, 50)",0.6918300653594771
+341,tanh,sgd,1.0,adaptive,"(100,)",0.6339869281045751
+342,tanh,sgd,0.001,constant,"(50, 50, 50)",0.6790849673202615
+343,tanh,sgd,0.001,constant,"(50, 100, 50)",0.6594771241830066
+344,tanh,sgd,0.001,constant,"(100,)",0.6382352941176471
+345,tanh,sgd,0.001,invscaling,"(50, 50, 50)",0.5179738562091505
+346,tanh,sgd,0.001,invscaling,"(50, 100, 50)",0.43431372549019615
+347,tanh,sgd,0.001,invscaling,"(100,)",0.523202614379085
+348,tanh,sgd,0.001,adaptive,"(50, 50, 50)",0.661437908496732
+349,tanh,sgd,0.001,adaptive,"(50, 100, 50)",0.6065359477124183
+350,tanh,sgd,0.001,adaptive,"(100,)",0.6091503267973856
+351,tanh,sgd,0.01,constant,"(50, 50, 50)",0.6232026143790851
+352,tanh,sgd,0.01,constant,"(50, 100, 50)",0.642156862745098
+353,tanh,sgd,0.01,constant,"(100,)",0.6277777777777777
+354,tanh,sgd,0.01,invscaling,"(50, 50, 50)",0.6049019607843138
+355,tanh,sgd,0.01,invscaling,"(50, 100, 50)",0.4104575163398693
+356,tanh,sgd,0.01,invscaling,"(100,)",0.47189542483660124
+357,tanh,sgd,0.01,adaptive,"(50, 50, 50)",0.6496732026143791
+358,tanh,sgd,0.01,adaptive,"(50, 100, 50)",0.6035947712418301
+359,tanh,sgd,0.01,adaptive,"(100,)",0.5794117647058824
+360,tanh,adam,1e-05,constant,"(50, 50, 50)",0.6493464052287582
+361,tanh,adam,1e-05,constant,"(50, 100, 50)",0.591830065359477
+362,tanh,adam,1e-05,constant,"(100,)",0.6241830065359476
+363,tanh,adam,1e-05,invscaling,"(50, 50, 50)",0.6457516339869281
+364,tanh,adam,1e-05,invscaling,"(50, 100, 50)",0.607516339869281
+365,tanh,adam,1e-05,invscaling,"(100,)",0.5830065359477123
+366,tanh,adam,1e-05,adaptive,"(50, 50, 50)",0.5591503267973856
+367,tanh,adam,1e-05,adaptive,"(50, 100, 50)",0.5588235294117647
+368,tanh,adam,1e-05,adaptive,"(100,)",0.6830065359477123
+369,tanh,adam,0.0001,constant,"(50, 50, 50)",0.5745098039215686
+370,tanh,adam,0.0001,constant,"(50, 100, 50)",0.6081699346405229
+371,tanh,adam,0.0001,constant,"(100,)",0.6421568627450981
+372,tanh,adam,0.0001,invscaling,"(50, 50, 50)",0.5774509803921568
+373,tanh,adam,0.0001,invscaling,"(50, 100, 50)",0.6470588235294118
+374,tanh,adam,0.0001,invscaling,"(100,)",0.6571895424836602
+375,tanh,adam,0.0001,adaptive,"(50, 50, 50)",0.5650326797385621
+376,tanh,adam,0.0001,adaptive,"(50, 100, 50)",0.5816993464052287
+377,tanh,adam,0.0001,adaptive,"(100,)",0.6905228758169935
+378,tanh,adam,1.0,constant,"(50, 50, 50)",0.5065359477124183
+379,tanh,adam,1.0,constant,"(50, 100, 50)",0.6179738562091504
+380,tanh,adam,1.0,constant,"(100,)",0.6784313725490196
+381,tanh,adam,1.0,invscaling,"(50, 50, 50)",0.5911764705882353
+382,tanh,adam,1.0,invscaling,"(50, 100, 50)",0.6408496732026143
+383,tanh,adam,1.0,invscaling,"(100,)",0.6323529411764706
+384,tanh,adam,1.0,adaptive,"(50, 50, 50)",0.5918300653594771
+385,tanh,adam,1.0,adaptive,"(50, 100, 50)",0.5356209150326798
+386,tanh,adam,1.0,adaptive,"(100,)",0.6454248366013071
+387,tanh,adam,0.001,constant,"(50, 50, 50)",0.5584967320261438
+388,tanh,adam,0.001,constant,"(50, 100, 50)",0.5774509803921568
+389,tanh,adam,0.001,constant,"(100,)",0.5797385620915032
+390,tanh,adam,0.001,invscaling,"(50, 50, 50)",0.6160130718954248
+391,tanh,adam,0.001,invscaling,"(50, 100, 50)",0.6555555555555556
+392,tanh,adam,0.001,invscaling,"(100,)",0.6450980392156864
+393,tanh,adam,0.001,adaptive,"(50, 50, 50)",0.580718954248366
+394,tanh,adam,0.001,adaptive,"(50, 100, 50)",0.6277777777777779
+395,tanh,adam,0.001,adaptive,"(100,)",0.6588235294117648
+396,tanh,adam,0.01,constant,"(50, 50, 50)",0.576797385620915
+397,tanh,adam,0.01,constant,"(50, 100, 50)",0.5823529411764705
+398,tanh,adam,0.01,constant,"(100,)",0.6598039215686274
+399,tanh,adam,0.01,invscaling,"(50, 50, 50)",0.6081699346405229
+400,tanh,adam,0.01,invscaling,"(50, 100, 50)",0.5915032679738561
+401,tanh,adam,0.01,invscaling,"(100,)",0.60359477124183
+402,tanh,adam,0.01,adaptive,"(50, 50, 50)",0.6352941176470589
+403,tanh,adam,0.01,adaptive,"(50, 100, 50)",0.6408496732026144
+404,tanh,adam,0.01,adaptive,"(100,)",0.623202614379085
+405,relu,lbfgs,1e-05,constant,"(50, 50, 50)",0.6173202614379086
+406,relu,lbfgs,1e-05,constant,"(50, 100, 50)",0.6493464052287581
+407,relu,lbfgs,1e-05,constant,"(100,)",0.6142156862745098
+408,relu,lbfgs,1e-05,invscaling,"(50, 50, 50)",0.6622549019607843
+409,relu,lbfgs,1e-05,invscaling,"(50, 100, 50)",0.5859477124183006
+410,relu,lbfgs,1e-05,invscaling,"(100,)",0.6862745098039216
+411,relu,lbfgs,1e-05,adaptive,"(50, 50, 50)",0.6977124183006536
+412,relu,lbfgs,1e-05,adaptive,"(50, 100, 50)",0.7049019607843137
+413,relu,lbfgs,1e-05,adaptive,"(100,)",0.60359477124183
+414,relu,lbfgs,0.0001,constant,"(50, 50, 50)",0.5787581699346405
+415,relu,lbfgs,0.0001,constant,"(50, 100, 50)",0.6009803921568627
+416,relu,lbfgs,0.0001,constant,"(100,)",0.559640522875817
+417,relu,lbfgs,0.0001,invscaling,"(50, 50, 50)",0.6032679738562091
+418,relu,lbfgs,0.0001,invscaling,"(50, 100, 50)",0.6032679738562092
+419,relu,lbfgs,0.0001,invscaling,"(100,)",0.6016339869281045
+420,relu,lbfgs,0.0001,adaptive,"(50, 50, 50)",0.67140522875817
+421,relu,lbfgs,0.0001,adaptive,"(50, 100, 50)",0.6202614379084969
+422,relu,lbfgs,0.0001,adaptive,"(100,)",0.569281045751634
+423,relu,lbfgs,1.0,constant,"(50, 50, 50)",0.6068627450980392
+424,relu,lbfgs,1.0,constant,"(50, 100, 50)",0.6215686274509804
+425,relu,lbfgs,1.0,constant,"(100,)",0.6068627450980392
+426,relu,lbfgs,1.0,invscaling,"(50, 50, 50)",0.6016339869281045
+427,relu,lbfgs,1.0,invscaling,"(50, 100, 50)",0.5650326797385621
+428,relu,lbfgs,1.0,invscaling,"(100,)",0.6238562091503268
+429,relu,lbfgs,1.0,adaptive,"(50, 50, 50)",0.5666666666666667
+430,relu,lbfgs,1.0,adaptive,"(50, 100, 50)",0.5915032679738561
+431,relu,lbfgs,1.0,adaptive,"(100,)",0.6245098039215686
+432,relu,lbfgs,0.001,constant,"(50, 50, 50)",0.6374183006535947
+433,relu,lbfgs,0.001,constant,"(50, 100, 50)",0.6184640522875817
+434,relu,lbfgs,0.001,constant,"(100,)",0.6470588235294117
+435,relu,lbfgs,0.001,invscaling,"(50, 50, 50)",0.5787581699346406
+436,relu,lbfgs,0.001,invscaling,"(50, 100, 50)",0.6369281045751635
+437,relu,lbfgs,0.001,invscaling,"(100,)",0.6137254901960784
+438,relu,lbfgs,0.001,adaptive,"(50, 50, 50)",0.6150326797385621
+439,relu,lbfgs,0.001,adaptive,"(50, 100, 50)",0.6630718954248366
+440,relu,lbfgs,0.001,adaptive,"(100,)",0.5516339869281046
+441,relu,lbfgs,0.01,constant,"(50, 50, 50)",0.5454248366013071
+442,relu,lbfgs,0.01,constant,"(50, 100, 50)",0.5990196078431373
+443,relu,lbfgs,0.01,constant,"(100,)",0.6424836601307189
+444,relu,lbfgs,0.01,invscaling,"(50, 50, 50)",0.6598039215686275
+445,relu,lbfgs,0.01,invscaling,"(50, 100, 50)",0.6081699346405228
+446,relu,lbfgs,0.01,invscaling,"(100,)",0.6277777777777778
+447,relu,lbfgs,0.01,adaptive,"(50, 50, 50)",0.6552287581699346
+448,relu,lbfgs,0.01,adaptive,"(50, 100, 50)",0.6212418300653596
+449,relu,lbfgs,0.01,adaptive,"(100,)",0.6441176470588236
+450,relu,sgd,1e-05,constant,"(50, 50, 50)",0.6519607843137255
+451,relu,sgd,1e-05,constant,"(50, 100, 50)",0.6669934640522875
+452,relu,sgd,1e-05,constant,"(100,)",0.6107843137254901
+453,relu,sgd,1e-05,invscaling,"(50, 50, 50)",0.5954248366013072
+454,relu,sgd,1e-05,invscaling,"(50, 100, 50)",0.4813725490196078
+455,relu,sgd,1e-05,invscaling,"(100,)",0.5264705882352941
+456,relu,sgd,1e-05,adaptive,"(50, 50, 50)",0.5990196078431371
+457,relu,sgd,1e-05,adaptive,"(50, 100, 50)",0.5702614379084967
+458,relu,sgd,1e-05,adaptive,"(100,)",0.6643790849673202
+459,relu,sgd,0.0001,constant,"(50, 50, 50)",0.6055555555555555
+460,relu,sgd,0.0001,constant,"(50, 100, 50)",0.6359477124183006
+461,relu,sgd,0.0001,constant,"(100,)",0.634313725490196
+462,relu,sgd,0.0001,invscaling,"(50, 50, 50)",0.5679738562091503
+463,relu,sgd,0.0001,invscaling,"(50, 100, 50)",0.5055555555555554
+464,relu,sgd,0.0001,invscaling,"(100,)",0.6032679738562091
+465,relu,sgd,0.0001,adaptive,"(50, 50, 50)",0.6088235294117648
+466,relu,sgd,0.0001,adaptive,"(50, 100, 50)",0.6003267973856209
+467,relu,sgd,0.0001,adaptive,"(100,)",0.615032679738562
+468,relu,sgd,1.0,constant,"(50, 50, 50)",0.5660130718954248
+469,relu,sgd,1.0,constant,"(50, 100, 50)",0.5692810457516341
+470,relu,sgd,1.0,constant,"(100,)",0.6150326797385622
+471,relu,sgd,1.0,invscaling,"(50, 50, 50)",0.5741830065359477
+472,relu,sgd,1.0,invscaling,"(50, 100, 50)",0.5192810457516341
+473,relu,sgd,1.0,invscaling,"(100,)",0.5777777777777778
+474,relu,sgd,1.0,adaptive,"(50, 50, 50)",0.5908496732026143
+475,relu,sgd,1.0,adaptive,"(50, 100, 50)",0.6715686274509803
+476,relu,sgd,1.0,adaptive,"(100,)",0.6754901960784314
+477,relu,sgd,0.001,constant,"(50, 50, 50)",0.6186274509803923
+478,relu,sgd,0.001,constant,"(50, 100, 50)",0.641830065359477
+479,relu,sgd,0.001,constant,"(100,)",0.5999999999999999
+480,relu,sgd,0.001,invscaling,"(50, 50, 50)",0.5816993464052287
+481,relu,sgd,0.001,invscaling,"(50, 100, 50)",0.5209150326797386
+482,relu,sgd,0.001,invscaling,"(100,)",0.5349673202614379
+483,relu,sgd,0.001,adaptive,"(50, 50, 50)",0.6375816993464052
+484,relu,sgd,0.001,adaptive,"(50, 100, 50)",0.6643790849673202
+485,relu,sgd,0.001,adaptive,"(100,)",0.6101307189542483
+486,relu,sgd,0.01,constant,"(50, 50, 50)",0.6611111111111111
+487,relu,sgd,0.01,constant,"(50, 100, 50)",0.5676470588235294
+488,relu,sgd,0.01,constant,"(100,)",0.6124183006535947
+489,relu,sgd,0.01,invscaling,"(50, 50, 50)",0.6611111111111111
+490,relu,sgd,0.01,invscaling,"(50, 100, 50)",0.44607843137254904
+491,relu,sgd,0.01,invscaling,"(100,)",0.6022875816993465
+492,relu,sgd,0.01,adaptive,"(50, 50, 50)",0.6013071895424837
+493,relu,sgd,0.01,adaptive,"(50, 100, 50)",0.5601307189542484
+494,relu,sgd,0.01,adaptive,"(100,)",0.5941176470588235
+495,relu,adam,1e-05,constant,"(50, 50, 50)",0.6261437908496732
+496,relu,adam,1e-05,constant,"(50, 100, 50)",0.5598039215686275
+497,relu,adam,1e-05,constant,"(100,)",0.6192810457516341
+498,relu,adam,1e-05,invscaling,"(50, 50, 50)",0.5856209150326797
+499,relu,adam,1e-05,invscaling,"(50, 100, 50)",0.6068627450980392
+500,relu,adam,1e-05,invscaling,"(100,)",0.5833333333333333
+501,relu,adam,1e-05,adaptive,"(50, 50, 50)",0.5571895424836601
+502,relu,adam,1e-05,adaptive,"(50, 100, 50)",0.5758169934640522
+503,relu,adam,1e-05,adaptive,"(100,)",0.6568627450980392
+504,relu,adam,0.0001,constant,"(50, 50, 50)",0.5836601307189544
+505,relu,adam,0.0001,constant,"(50, 100, 50)",0.5800653594771241
+506,relu,adam,0.0001,constant,"(100,)",0.6215686274509803
+507,relu,adam,0.0001,invscaling,"(50, 50, 50)",0.5980392156862745
+508,relu,adam,0.0001,invscaling,"(50, 100, 50)",0.5895424836601307
+509,relu,adam,0.0001,invscaling,"(100,)",0.6751633986928105
+510,relu,adam,0.0001,adaptive,"(50, 50, 50)",0.5656862745098039
+511,relu,adam,0.0001,adaptive,"(50, 100, 50)",0.6643790849673202
+512,relu,adam,0.0001,adaptive,"(100,)",0.6124183006535947
+513,relu,adam,1.0,constant,"(50, 50, 50)",0.5990196078431371
+514,relu,adam,1.0,constant,"(50, 100, 50)",0.5950980392156863
+515,relu,adam,1.0,constant,"(100,)",0.6705882352941177
+516,relu,adam,1.0,invscaling,"(50, 50, 50)",0.5382352941176471
+517,relu,adam,1.0,invscaling,"(50, 100, 50)",0.5839869281045752
+518,relu,adam,1.0,invscaling,"(100,)",0.561437908496732
+519,relu,adam,1.0,adaptive,"(50, 50, 50)",0.6228758169934641
+520,relu,adam,1.0,adaptive,"(50, 100, 50)",0.5699346405228759
+521,relu,adam,1.0,adaptive,"(100,)",0.5980392156862745
+522,relu,adam,0.001,constant,"(50, 50, 50)",0.6470588235294119
+523,relu,adam,0.001,constant,"(50, 100, 50)",0.6287581699346406
+524,relu,adam,0.001,constant,"(100,)",0.6333333333333333
+525,relu,adam,0.001,invscaling,"(50, 50, 50)",0.5875816993464053
+526,relu,adam,0.001,invscaling,"(50, 100, 50)",0.5892156862745098
+527,relu,adam,0.001,invscaling,"(100,)",0.6581699346405229
+528,relu,adam,0.001,adaptive,"(50, 50, 50)",0.5973856209150326
+529,relu,adam,0.001,adaptive,"(50, 100, 50)",0.6081699346405228
+530,relu,adam,0.001,adaptive,"(100,)",0.5836601307189543
+531,relu,adam,0.01,constant,"(50, 50, 50)",0.5696078431372549
+532,relu,adam,0.01,constant,"(50, 100, 50)",0.596078431372549
+533,relu,adam,0.01,constant,"(100,)",0.6398692810457516
+534,relu,adam,0.01,invscaling,"(50, 50, 50)",0.6003267973856209
+535,relu,adam,0.01,invscaling,"(50, 100, 50)",0.5915032679738562
+536,relu,adam,0.01,invscaling,"(100,)",0.6163398692810458
+537,relu,adam,0.01,adaptive,"(50, 50, 50)",0.5800653594771241
+538,relu,adam,0.01,adaptive,"(50, 100, 50)",0.5310457516339869
+539,relu,adam,0.01,adaptive,"(100,)",0.680718954248366
