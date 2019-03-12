@@ -6,10 +6,19 @@ import config
 import pickle
 #code which helps initialize our server
 client_credentials_manager = SpotifyClientCredentials(config.client_id, config.client_secret)
-mlp = pickle.load(open("model.pkl","rb"))
-mlp_online = pickle.load(open("mlp_online.pkl","rb"))
-svm = pickle.load(open("svm.pkl","rb"))
-log = pickle.load(open("log.pkl","rb"))
+
+scaler_mlp = pickle.load(open("models/3yp_scaler_mlp_smote.pkl","rb"))
+mlp = pickle.load(open("models/3yp_mlp_smote.pkl","rb"))
+
+scaler_mlp_online = pickle.load(open("models/3yp_scaler_mlp_online.pkl","rb"))
+mlp_online = pickle.load(open("models/3yp_mlp_online.pkl","rb"))
+
+scaler_svm = pickle.load(open("models/3yp_scaler_svm.pkl","rb"))
+svm = pickle.load(open("models/3yp_svm.pkl","rb"))
+
+scaler_log = pickle.load(open("models/3yp_scaler_log.pkl","rb"))
+log = pickle.load(open("models/3yp_log.pkl","rb"))
+
 print("MLP loaded", mlp)
 print()
 print("MLP Online loaded", mlp_online)
@@ -17,8 +26,7 @@ print()
 print("SVM with sel features loaded", svm)
 print()
 print("Log. Reg loaded", log)
-scaler = pickle.load(open("scaler.pkl","rb"))
-scaler_svm = pickle.load(open("scaler_svm.pkl","rb"))
+
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 app = Flask(__name__)
 
@@ -66,9 +74,10 @@ def searchAndPredictSong():
 				data.append([energy, liveness, tempo, speechiness, acousticness, instrumentalness, time_signature,
 				      danceability, key, duration_ms, loudness, valence, mode])
 				# print(data)
-				scaled_data = scaler.transform(data)
+				#scaled_data = scaler.transform(data)
 				
 				if selectedModel == "SVM":
+
 					usingCls = "SVM"
 					print("USING SVM")
 					data_with_fs = []
@@ -80,18 +89,23 @@ def searchAndPredictSong():
 				elif selectedModel == "Log. Reg.":
 					usingCls = "Log. Reg."
 					print("USING Log. Reg.");
-					predicted_label = log.predict(scaled_data)
-					predicted_probablities = log.predict_proba(scaled_data)
+					data_with_fs = []
+					data_with_fs.append([energy, tempo, instrumentalness, danceability, loudness, valence])
+					scaled_data_with_fs = scaler_log.transform(data_with_fs)
+					predicted_label = log.predict(scaled_data_with_fs)
+					predicted_probablities = log.predict_proba(scaled_data_with_fs)
 					isPopular = predicted_label[0]
 				elif selectedModel == "MLP":
 					usingCls = "MLP"
 					print("USING MLP");
+					scaled_data = scaler_mlp.transform(data)
 					predicted_label = mlp.predict(scaled_data)
 					predicted_probablities = mlp.predict_proba(scaled_data)
 					isPopular = predicted_label[0]
 				elif selectedModel == "MLP Online":
 					usingCls = "MLP Online"
 					print("USING MLP Online")
+					scaled_data = scaler_mlp_online.transform(data)
 					predicted_label = mlp_online.predict(scaled_data)
 					predicted_probablities = mlp_online.predict_proba(scaled_data)
 					isPopular = predicted_label[0]
@@ -110,7 +124,7 @@ def searchAndPredictSong():
 					isPopular = predicted_label[0]
 				
 				print("Predicted label is : ", predicted_label)
-				print(predicted_probablities)
+				print(round(predicted_probablities[0][0],3),",", round(predicted_probablities[0][1],3))
 		else:
 			message = "No song found for query: " + query
 			return render_template('index.html', message = message)
