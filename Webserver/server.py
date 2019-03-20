@@ -16,6 +16,9 @@ mlp_online = pickle.load(open("models/3yp_mlp_online.pkl","rb"))
 scaler_svm = pickle.load(open("models/3yp_scaler_svm.pkl","rb"))
 svm = pickle.load(open("models/3yp_svm.pkl","rb"))
 
+scaler_svm_smote = pickle.load(open("models/3yp_scaler_svm_smote.pkl","rb"))
+svm_smote = pickle.load(open("models/3yp_svm_smote.pkl","rb"))
+
 scaler_log = pickle.load(open("models/3yp_scaler_log.pkl","rb"))
 log = pickle.load(open("models/3yp_log.pkl","rb"))
 
@@ -25,10 +28,20 @@ print("MLP Online loaded", mlp_online)
 print()
 print("SVM with sel features loaded", svm)
 print()
+print("SVM SMOTE loaded", svm_smote)
+print()
 print("Log. Reg loaded", log)
 
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 app = Flask(__name__)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template('500.html'), 500
 
 @app.route('/')
 def index():
@@ -43,7 +56,7 @@ def searchAndPredictSong():
 	artistName = ""
 	isPopular = ""
 	spotifyURL = ""
-	if query != "":
+	if query != None and query != "":
 		results = sp.search(q='track:' +  query, limit=1, type='track')
 		# print(results)
 		if results['tracks']['items'] != []:
@@ -75,7 +88,6 @@ def searchAndPredictSong():
 				      danceability, key, duration_ms, loudness, valence, mode])
 				# print(data)
 				#scaled_data = scaler.transform(data)
-				
 				if selectedModel == "SVM":
 
 					usingCls = "SVM"
@@ -85,6 +97,15 @@ def searchAndPredictSong():
 					scaled_data_with_fs = scaler_svm.transform(data_with_fs)
 					predicted_label = svm.predict(scaled_data_with_fs)
 					predicted_probablities = svm.predict_proba(scaled_data_with_fs)
+					isPopular = predicted_label[0]
+				elif selectedModel == "SVM SMOTE":
+					usingCls = "SVM SMOTE"
+					print("USING SVM SMOTE")
+					data_with_fs = []
+					data_with_fs.append([energy,tempo,speechiness,loudness,valence])
+					scaled_data_with_fs = scaler_svm_smote.transform(data_with_fs)
+					predicted_label = svm_smote.predict(scaled_data_with_fs)
+					predicted_probablities = svm_smote.predict_proba(scaled_data_with_fs)
 					isPopular = predicted_label[0]
 				elif selectedModel == "Log. Reg.":
 					usingCls = "Log. Reg."
@@ -117,8 +138,9 @@ def searchAndPredictSong():
 					print("Learning new example with popularity: ", popularity)
 					mlp_online.partial_fit(scaled_data, y)
 				else:
-					print("USING MLP");
 					usingCls = "MLP"
+					print("USING MLP");
+					scaled_data = scaler_mlp.transform(data)
 					predicted_label = mlp.predict(scaled_data)
 					predicted_probablities = mlp.predict_proba(scaled_data)
 					isPopular = predicted_label[0]
