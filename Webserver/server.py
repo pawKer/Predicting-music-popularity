@@ -147,6 +147,7 @@ def searchAndPredictSong():
 				
 				print("Predicted label is : ", predicted_label)
 				print(round(predicted_probablities[0][0],3),",", round(predicted_probablities[0][1],3))
+				print("Actual popularity is: ", popularity)
 		else:
 			message = "No song found for query: " + query
 			return render_template('index.html', message = message)
