@@ -1,11 +1,14 @@
+from __future__ import print_function
 from flask import Flask, render_template
 from flask import request
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-import config
 import pickle
+from dotenv import load_dotenv
+import os
 #code which helps initialize our server
-client_credentials_manager = SpotifyClientCredentials(config.client_id, config.client_secret)
+load_dotenv()
+client_credentials_manager = SpotifyClientCredentials(os.getenv("SPOTIFY_CLIENT_ID"), os.getenv("SPOTIFY_CLIENT_SECRET"))
 
 scaler_mlp = pickle.load(open("models/3yp_scaler_mlp_smote.pkl","rb"))
 mlp = pickle.load(open("models/3yp_mlp_smote.pkl","rb"))
