@@ -16,7 +16,7 @@ The full final disseration that outlines the research process and methods can be
 
 ## 📜 Repository description
 
-This repo also contains the data used for the research and the code for the web application.
+This repo also contains the data used for the research and the code for the web application (as a submodule).
 
 I have tried to add inline comments along the way for ease of understanding. This is what each file is for:
 

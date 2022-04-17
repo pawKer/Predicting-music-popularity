@@ -1,0 +1,3 @@
+[submodule "predicting-popularity-webserver"]
+	path = predicting-popularity-webserver
+	url = https://github.com/pawKer/predicting-popularity-webserver
